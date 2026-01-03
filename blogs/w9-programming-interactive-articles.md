@@ -26,7 +26,7 @@ This matters especially in computer science. Many CS concepts are fundamentally 
 
 High-quality interactivity is currently expensive. 
 
-With static writing, you coordinate an argument and its figures. With interactive writing, you coordinate narrative, visualization, state, and code, all while ensuring the experience remains coherent. Concretely this means:
+With static writing, you mesh an argument and its figures. With interactive writing, you coordinate narrative, visualization, state, and code, all while ensuring the experience remains coherent. Concretely this means:
 
 * designing interaction that teaches rather than distracts
 * handling state and dependency management
@@ -34,6 +34,7 @@ With static writing, you coordinate an argument and its figures. With interactiv
 * dealing with packaging, deployment, and long-term maintenance
 
 This overhead can make an article high-quality and high-signal but the cost is most likely double in each way.
+
 
 ## **Tooling that tried to reduce the overhead**
 
@@ -45,13 +46,15 @@ In principle, this lets authors write normally and “drop in” sliders and com
 
 So why didn’t this style become mainstream?
 
-After Jeffrey Heer helped release Idyll he also tried to launch Distill, a publication that pushed interactive, explorable ML communication. The work required to do research *and* write *and* build a robust interactive article is substantial (Hohman et al., 2020). Interactive pieces also introduce practical frictions:
+After Jeffrey Heer helped release Idyll he also tried to launch Distill, a publication that pushed interactive, explorable ML communication. The work required to do research *and* write *and* build a robust interactive article is substantial (Hohman et al., 2020). For me the time effort was around 3-4 hours to understand the layout and how to navigate and possibilities and then another 2-3 hours for just designing components. Developping more complex ML tasks and making them intuitive is a lot more work and not surprisingly led to a lot of burnouts.
+
+Interactive pieces in research also introduce frictions:
 
 * **Maintenance:** reactive components break as dependencies/packages evolve
 * **Archiving:** PDFs are stable, code-driven documents are hard to preserve
 * **Data constraints:** large real-world datasets may be too large and too expensive to host for indefinite time
 
-Interactive articles are often most feasible when explaining algorithms, conceptual models, or carefully curated datasets, cases where the “state space” is meaningful but still small enough to run smoothly. Yet distill went into hiatus in 2021 after most volunteers were burning out from the work load.
+Interactive articles are often most feasible when explaining algorithms, conceptual models, or carefully curated datasets, cases where the “state space” is meaningful but still small enough to run smoothly. Yet distill went into hiatus in 2021 after most volunteers couldn't keep up with the workload introduced.
 
 ## **Where interactive articles are going**
 
@@ -73,8 +76,6 @@ If this trend continues, the “next web format” may be less about infinite pu
 
 ## **References**
 
-Chen, Z., & Xia, H. (2022, April). *CrossData: Leveraging text-data connections for authoring data documents*. In *Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems* (pp. 1–15).
-
 Conlen, M., & Heer, J. (2018). Idyll: A markup language for authoring and publishing interactive articles on the web. In *Proceedings of the 31st Annual ACM Symposium on User Interface Software and Technology (UIST ’18)*. [https://doi.org/10.1145/3242587.3242600]
 
 Dragicevic, P., Jansen, Y., Sarma, A., Kay, M., & Chevalier, F. (2019). Increasing the transparency of research papers with explorable multiverse analyses. In *Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (CHI ’19)* (pp. 1–15). [https://doi.org/10.1145/3290605.3300295]
@@ -84,3 +85,5 @@ Heer, J., Conlen, M., Devireddy, V., Nguyen, T., & Horowitz, J. (2023). Living P
 Hohman, F., Conlen, M., Heer, J., & Chau, D. H. P. (2020). Communicating with interactive articles. *Distill, 5*(9). [https://doi.org/10.23915/distill.00028]
 
 Zhang, R., Ouyang, Y., Shen, L., Tang, Y., Ma, X., Qu, H., & Xu, X. (2025). PaperBridge: Crafting research narratives through human–AI co-exploration. In *Proceedings of the 38th Annual ACM Symposium on User Interface Software and Technology (UIST ’25)*. [https://doi.org/10.1145/3746059.3747713]
+
+Chen, Z., & Xia, H. (2022, April). *CrossData: Leveraging text-data connections for authoring data documents*. In *Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems* (pp. 1–15). [https://hci.ucsd.edu/papers/crossdata.pdf]
