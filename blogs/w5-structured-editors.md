@@ -1,4 +1,4 @@
-# W4 Structured Editors
+# W5 Structured Editors
 
 Author: Julian Kalitzke
 
